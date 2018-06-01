@@ -1,7 +1,7 @@
 import requests
 
 url = 'http://www.url.com' # url or path 
-f = open("payload/payload.txt","r") # open payload file, "r" is read only mode
+f = open("payload/samos_basicfuzz.txt","r") # open payload file, "r" is read only mode
 countRequests = 0 # variable used to count number of requests/payloads
 countSuccessRequests = 0 # variable used to count success requests (send on uptime and)
 countFailedRequests = 0 # variable used to count fail requests (send on downtime or other fail)
@@ -44,6 +44,7 @@ else :
     print('Why success requests are more than total request ?')
 print('###################################################################')
 
+f.close()
 #payload = f.readlines()
 #payload = {'key1': 'value1', 'key2': 'value2'}
 
